@@ -1,0 +1,53 @@
+<body>
+    <div>
+        <div id="div_3" class="div_1"></div>
+        <div id="div_4" class="div_2">
+            <p>it works</p>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: black;
+        }
+        p {
+            font-size: 50px;
+            color: blueviolet;
+        }
+        .div_2 {
+            display: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .div_1 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            border: 1px solid grey;
+            border-radius: 100%;
+            animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+        }
+        @keyframes example {
+  25% {border-color: red;}
+  50% {border-color: yellow;}
+  75% {border-color: purple;}
+  100% {border-color: green;}
+}
+    </style>
+    <script src="./index.js"></script>
+</body>
+let div_thing =  document.getElementById('div_3')
+ let div_thing_2 =  document.getElementById('div_4')
+ const myTimeout = setTimeout(myGreeting, 5000);
+ let bd = document.querySelector('body')
+ function myGreeting() {
+    div_thing.style.transition = "0.5s"
+    div_thing.style.display = 'none'
+    div_thing_2.style.display = 'block'
+    bd.style.backgroundColor = 'white'
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<body>
+	<div id="clockContainer">
+		<div id="hour"></div>
+		<div id="minute"></div>
+		<div id="second"></div>
+	</div>
+</body>
+</html>
+
+    <style>
+        #clockContainer {
+	position: relative;
+	margin: auto;
+	height: 40vw;
+	/*to make the height and width responsive*/
+	width: 40vw;
+	background: url(./imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg) no-repeat;
+	/*setting our background image*/
+	background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+	position: absolute;
+	background: red;
+	border-radius: 10px;
+	transform-origin: bottom;
+}
+
+#hour {
+	width: 1.8%;
+	height: 25%;
+	top: 25%;
+	left: 48.85%;
+	opacity: 0.8;
+    transition: 0.5s;
+}
+
+#minute {
+	width: 1.6%;
+	height: 30%;
+	top: 20%;
+	left: 50%;
+	opacity: 0.8;
+    transition: 0.5s;
+}
+
+#second {
+	width: 1%;
+	height: 42%;
+	top: 29px;
+	left: 173px;
+	opacity: 0.8;
+    transition: 0.5s;
+}
+
+    </style>
+    <script>
+        setInterval(() => {
+	d = new Date(); 
+	hr = d.getHours();
+	min = d.getMinutes();
+	sec = d.getSeconds();
+	min_1 = 6 * min;
+	sec_1 = 6 * min;
+    hr_1 = 30 * hr + min / 2; 
+    console.log(sec)
+	hour.style.transform = `rotate(${hr_1}deg)`;
+	minute.style.transform = `rotate(${min_1}deg)`;
+	second.style.transform = `rotate(${sec_1}deg)`;
+}, 1000);
+
+        // let myDate = new Date();
+        // let secDate = new Date('08-24-2001')
+        // console.log(secDate.getFullYear)
+        // let year = myDate.getFullYear();
+        // let month = myDate.getMonth();
+        // let names = ['january','february','march','april','may']
+        // console.log(names[1])
+        // myDate.setFullYear("2000")
+        // console.log(myDate.getFullYear())
+    </script>
+</body>
+</html>

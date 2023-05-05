@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+        <div id="box-3"></div>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <script>
+        // let x = new Date('23 sep 2000 06:00:00')
+        // let y = new Date() 
+        // // parse ითვლის 1970 წლიდან
+        // console.log(((((((Date.parse(y)-Date.parse(x))/1000)/60)/60)/24)/365))
+        // console.log(((((Date.parse(x)/1000)/60)/60)/24)/365))
+        let box = document.querySelector('#box-2')
+        box.parentElement.style.backgroundColor = 'red'
+        box.parentElement.children[1].innerHTML = 'second-child'
+        box.previousElementSibling.innerHTML = 'first-child'
+        box.nextElementSibling.innerHTML = 'third-child'
+        box.parentElement.firstElementChild.innerHTML = 'first-chhild_2'
+        box.parentElement.lastElementChild.innerHTML = 'last-chhild_2'
+        let c = box.parentElement.childElementCount
+        console.log(c)
+    </script>
+</body>
+</html>
