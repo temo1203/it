@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_id" class="div_1">
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+        <div id="fourth">4</div>
+    </div>
+    <button onclick="nextClick()" id="next">next</button>
+    <button onclick="prevClick()" id="prev">prev</button>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .div_1 {
+            display: flex;
+            gap: 50px;
+
+        }
+        .div_1 div {
+            width: 20px;
+            border: 2px black solid;
+            border-radius: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+let box = document.querySelector('#div_id')
+let box_1 = document.querySelector('#first')
+let box_2 = document.querySelector('#second')
+let box_3 = document.querySelector('#third')
+let box_4 = document.querySelector('#fourth')
+function nextClick(){
+  if(box.firstElementChild.style.borderColor = 'black'){
+    box.firstElementChild.style.borderColor = 'blue'
+    console.log('first-box')
+  } else if(box.children[1].style.borderColor = 'black'){
+    box.children[1].style.borderColor = 'blue'
+  }else {
+      console.log('false')
+  }
+ 
+  }
+    </script>
+</body>
+</html>
