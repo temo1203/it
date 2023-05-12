@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="main_div">
+        <div class="check">
+            <ion-icon class="check_1" name="checkmark-outline"></ion-icon>
+        </div>
+        <div class="heart">
+            <ion-icon  class="heart_1"  name="heart-outline"></ion-icon>
+        </div>
+        <div class="star">
+            <ion-icon  class="star_1" name="star-outline"></ion-icon>
+        </div>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .main_div {
+            display: flex;
+            gap: 50px;
+        }
+        .main_div div {
+            background-color: black;
+            padding: 50px;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main_div div ion-icon {
+            color: white;
+            width: 30px;
+            height: 30px;
+            
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.check_1').click(function(){
+                $(this).animate({width: "100px"},100)
+                $(this).animate({height: "100px"},100)
+                $('.check').css({'background-color': 'green'})
+            })
+            $('.heart_1').click(function(){
+                $(this).animate({width: "100px"},100)
+                $(this).animate({height: "100px"},100)
+                $('.heart').css({'background-color': 'red'})
+            })
+            $('.star_1').click(function(){
+                $(this).animate({width: "100px"},100)
+                $(this).animate({height: "100px"},100)
+                $('.star').css({'background-color': 'yellow'})
+            })
+            $('div').on({
+                click:function(){alert('word-1')},
+                mouseLeave:function(){alert('happened-2')}
+            })
+        })
+    </script>
+</body>
+</html>

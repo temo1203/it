@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        a img {
+            width: 30px;
+        }
+        .p_1 {
+
+        }
+    </style>
+    <header>
+        <p>click me another</p>
+        <a href="#">
+            <img src="../lection-2/monkey.png" alt="">
+        </a>
+    </header>
+    <div class="clas_div">
+        <button class="close-menu">x</button>
+    </div>
+    <p class="p_1">click</p>
+    <script>
+        $('p')
+        $('.class')
+        $('#id')
+        $('p:first')
+        $('p:eq(4)')
+        $('div:has(img)') 
+        // ამიტ ვუთიტებთ აქვს თუ არა იმიჯი
+        // fadein(),fadeOut(),fadetoggle() (,აქ ვწერთ სიჩქარეს, აქ ვუწერთ opacity)
+        // slidedown(),slideup(),slidetoggle() (აქ ვწერთ სიჩქარეს ასევე შეგვიძლია მივუტითოთ მილიწამები,აქ შეგვიძლია linear,და კიდე ფუნქციაც მივანიჭოთ)
+        // delay() შეყოვნება არის რაც აყოვნებს და მილიწამებს ვუწერთ
+        // animate() (აქ კი პარამეტრებს ვწერთ მაგ: left: "50px",და სიჩქარე)
+        // css() აქ შეგვიძლია სტილები გადავცეთ პარამეტრებში
+        $('p_1').click(function(){
+            // $(this).hide()
+            // $(this).show()
+            $(this).toggle()
+        })
+     $('a').click(function(){
+         $('this').css("background-color: 'red'")
+     })
+    </script>
+</body>
+</html>
