@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    background: #0E1015;
+}
+.header_div {
+  display: flex;
+  padding-right: 190px;
+  padding-left: 190px;
+  justify-content: space-around;
+  padding-top: 20px;
+  background: #0E1015;
+    align-items: center;
+}
+.header_lite ul {
+  display: flex;
+  gap: 20px;
+}
+.header_lite ul a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.icon-div a {
+    background: rgba(255, 255, 255, 0.03);
+border-radius: 100px;
+}
+.icon-div a ion-icon {
+    width: 30px;
+    height: 16px;
+}
+.first {
+    position: absolute;
+width: 368px;
+height: 368px;
+left: -256px;
+top: 50px;
+
+background: #6297FF;
+filter: blur(245.5px);
+border-radius: 24px;
+}
+.second {
+    position: absolute;
+width: 368px;
+height: 368px;
+left: 1622px;
+top: -32px;
+
+background: rgba(255, 28, 110, 0.6);
+filter: blur(245.5px);
+border-radius: 24px;
+}
+.first_lite p {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 161.1%;
+letter-spacing: -0.04em;
+color: #FFFFFF;
+padding: 10px 24px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 65px;
+width: 185px;
+text-align: center;
+}
+.first_lite h1 {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 65.2294px;
+line-height: 91.5%;
+letter-spacing: -0.05em;
+color: white;
+margin-top: 30px;
+}
+.first_lite h2 {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 60.2294px;
+line-height: 91.5%;
+letter-spacing: -0.05em;
+color: white;
+}
+.first_lite h4 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.75px;
+    line-height: 104%;
+    letter-spacing: -0.03em;
+    color: #6297FF;
+}
+.first_lite button {
+    padding: 24px 42px;
+background: #BB1A41;
+border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 10px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 161.1%;
+letter-spacing: -0.065em;
+margin-top: 30px;
+}
+main {
+    margin-top: 200px;
+}
+.first_div {
+    padding: 0px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lite_image img {
+    width: 600px;
+height: 522px;
+}
+.third {
+    position: absolute;
+width: 1233px;
+height: 1042px;
+left: 2294px;
+top: -90px;
+
+border: 1px solid rgba(255, 255, 255, 0.2);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
