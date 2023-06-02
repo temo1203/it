@@ -139,6 +139,12 @@ color: #FFFFFF;
     width: 378px;
     cursor: pointer;
 }
+.search {
+    width: 130px;
+    height: 30px;
+    border: 1px solid goldenrod;
+    background-color: aqua;
+}
 .clicked_div {
     background: url(./Group\ 187.png);
     width: 1168px;
@@ -152,4 +158,13 @@ margin-top: 100px;
 }
 .img1 {
     background-image: url(./Rectangle\ 2.png);
+}
+.img2 {
+    background-image: url(../lection-2/monkey.png);
+}
+.img3 {
+    background-image: url(../lection-4/imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg);
+}
+.img4 {
+    background-image: url(../lesson-7/photos/Carlfromsweden2\ 1.png);
 }
