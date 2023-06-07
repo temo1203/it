@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div  class="main_div">
+        <div id="third"  class="flip-card">
+            <div class="flip-card-inner" id="third_lite">
+              <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <img id="third_image" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="first" class="flip-card">
+            <div class="flip-card-inner" id="first_lite">
+              <div class="flip-card-front">
+                <img  src="" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <img id="first_image" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="second" class="flip-card">
+            <div class="flip-card-inner" id="second_lite">
+              <div class="flip-card-front">
+                <img src="" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <img id="second_image" src="" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <style>
+      * {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 50px;
+      }
+      .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.rotate {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+    <script>
+        // $('#second_lite').hasClass('thing') && $('#third_lite').hasClass('thing')
+        $(function(){
+          let imgs = ['./photo-1550258987-190a2d41a8ba.jfif','img_avatar.png','2-2-2-3foodgroups_fruits_detailfeature.jpg']
+            $('#first').click(function(){
+                if($('div.thing').length == 2){
+                    console.log('mushaobs')
+                }else {
+                  $('#first_lite').addClass('rotate')
+                    $('#first_lite').addClass('thing')
+                    $('#first_image').attr("src", imgs[2])
+                }
+              })
+            $('#second').click(function(){
+                if($('div.thing').length == 2){
+                    console.log('mushaobs_2')
+                }else {
+                  $('#second_lite').addClass('rotate')
+                    $('#second_lite').addClass('thing')
+                    $('#second_image').attr('src',imgs[0])
+                }
+            })
+            $('#third').click(function(){
+                if($('div.thing').length == 2){
+                    console.log('mushaobs_3')
+                }else {
+                  $('#third_lite').addClass('rotate')
+                    $('#third_lite').addClass('thing')
+                    $('#third_image').attr('src',imgs[0])
+                }
+            })
+        })
+    </script>
+  </body>
+</html>
