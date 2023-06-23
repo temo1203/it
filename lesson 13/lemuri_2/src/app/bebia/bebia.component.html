@@ -1,8 +1,6 @@
 <nav>
-    <ul>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About us</li>
-        <li>Portfolio</li>
+    <ul *ngFor="let last of names">
+       <li>{{last}}</li> 
     </ul>
 </nav>
+<button (click)="sending()">Step btn</button>

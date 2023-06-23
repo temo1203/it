@@ -7,6 +7,7 @@ import { prevTopics } from './previus-topics';
 import { CompComponent } from './comp/comp.component';
 import { BebiaComponent } from './bebia/bebia.component';
 import { HeaderComponent } from './header/header.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     prevTopics,
     CompComponent,
     BebiaComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

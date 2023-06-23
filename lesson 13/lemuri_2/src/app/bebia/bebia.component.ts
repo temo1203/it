@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component,Input, ViewEncapsulation,OnInit,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-bebia',
@@ -9,5 +9,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   // encapsulation:ViewEncapsulation.Emulated
 })
 export class BebiaComponent {
-
+@Input() names = ['']
+@Output() public infoFromNav: EventEmitter<any> = new EventEmitter()
+sending(){
+  this.infoFromNav.emit('zdarova')
+}
 }

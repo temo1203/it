@@ -5,8 +5,10 @@ p {
 nav ul {
     display: flex;
     gap: 30px;
+    justify-content: center;
 }
 ul {
     list-style-type: none;
     font-size: 20px;
+    text-align: center;
 }
